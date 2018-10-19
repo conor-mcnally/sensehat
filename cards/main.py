@@ -7,7 +7,7 @@ sense = SenseHat()
 sense.clear()
 
 b = [0, 0, 0]
-g = [0, 255, 0]
+g = [255, 0, 0]
 
 heart = [
 b,g,b,g,b,b,b,b,
