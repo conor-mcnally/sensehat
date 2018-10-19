@@ -22,11 +22,11 @@ b,b,b,b,b,b,b,b,
 
 
 sense.set_pixels(heart)
-
+time.sleep(0.5)
 diamond = [
-b,b,b,b,b,b,b,b,
-b,b,b,b,b,b,b,b,
-b,b,b,b,b,b,b,b,
+b,b,b,b,g,b,b,b,
+b,b,b,g,g,g,b,b,
+b,b,b,b,g,b,b,b,
 b,b,b,b,b,b,b,b,
 b,b,b,b,b,b,b,b,
 b,b,b,b,b,b,b,b,
