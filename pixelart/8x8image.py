@@ -5,7 +5,7 @@ import os
  
 # Open image file
 image_file = os.path.join(
-os.sep,"/home","pi","SenseHAT","pixelart.png")
+os.sep,"/home","pi","sensehat","pixelart", "check.bmp")
 img = Image.open(image_file)
  
 # Generate rgb values for image pixels
@@ -13,7 +13,7 @@ rgb_img = img.convert('RGB')
 image_pixels = list(rgb_img.getdata())
  
 # Get the 64 pixels you need
-pixel_width = 6
+pixel_width = 8
 image_width = pixel_width*8
 sense_pixels = []
 start_pixel = 0
