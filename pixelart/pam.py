@@ -29,9 +29,9 @@ def callbackS():
 def callbackR():
 	print("Reset!")
 
-b1 = Button(window, compound=TOP, image=icon, text="Submit", command=callbackS, padx=5, pady=5)
-b2 = Button(window, compound=TOP, image=icon2, text="Reset", command=callbackR, padx=5, pady=5)
-b3 = Button(window, compound=TOP, image=icon3, text="Exit", command=close_window, padx=5, pady=5)
+b1 = Button(window, bg="black", fg="white", compound=TOP, image=icon, text="Submit", command=callbackS, padx=5, pady=5)
+b2 = Button(window, bg="black", fg="white", compound=TOP, image=icon2, text="Reset", command=callbackR, padx=5, pady=5)
+b3 = Button(window, bg="black", fg="white", compound=TOP, image=icon3, text="Exit", command=close_window, padx=5, pady=5)
 b1.config(relief=GROOVE, font="Arial 10")
 b2.config(relief=GROOVE, font="Arial 10")
 b3.config(relief=GROOVE, font="Arial 10")
@@ -55,7 +55,7 @@ b3.grid(row=2, column=4)
 # for r in range(8):
 # 	for c in range(8):
 # 		Label(window, text="R%s/C%s"%(r,c), borderwidth=2).grid(row=r,column=c)
-
+window.geometry('350x350')
 #Run the main loop
 window.mainloop()
 # master.mainloop()
