@@ -7,11 +7,18 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
   
   <script src="jscolor.js"></script>
+  <script src="script1.js"></script>
+  <script>
+    function refreshPage(){
+        window.location.reload();
+    } 
+  </script>
 
   <div id="navbar">
     <a href="#home">Home</a>
     <a href='index.html'>Pixel Art Maker</a>
     <a href='#Contact'>Contact</a>
+    <button type="submit"  onClick="refreshPage()">Refresh Button</button>
   </div>
 
 </head>
@@ -23,7 +30,7 @@
 <body background="background.jpg">
   <div id="art">
     <div class="row">
-      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}" value="disabled">
       <input class="jscolor {valueElement:null}">
       <input class="jscolor {valueElement:null}">
       <input class="jscolor {valueElement:null}">
@@ -40,7 +47,7 @@
       <input class="jscolor {valueElement:null}">
       <input class="jscolor {valueElement:null}">
       <input class="jscolor {valueElement:null}">
-      <input class="jscolor {valueElement:null}">
+      <input class="jscolor {valueElement:null}" >
     </div>
     <div class="row">
       <input class="jscolor {valueElement:null}">
@@ -103,7 +110,8 @@
       <input class="jscolor {valueElement:null}">
     </div>
   </div>
-  </form> 
+  </form>
+   
 </body>
 </html>
 
